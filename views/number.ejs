@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="number.css" />
+        <title>Numbers</title>
+    </head>
+    <body>
+        <h1 class="title">Message received for <%= number %></h1>
+        <div class="cards">
+            <% for( let i = 0; i < from.length; i++ ) { %>
+            <div class="card">
+                <b>From</b>
+                <p class="card-number"><%= from[i] %></p>
+                <b>Time</b>
+                <p class="card-number"><%= time[i] %></p>
+            </div>
+            <% } %>
+        </div>
+    </body>
+</html>

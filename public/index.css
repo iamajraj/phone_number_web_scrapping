@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.cards {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.card {
+    min-width: 150px;
+    max-width: 200px;
+    height: 180px;
+    flex: 1;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: rgb(97, 97, 255);
+}
